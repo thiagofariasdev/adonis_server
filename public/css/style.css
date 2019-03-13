@@ -1,0 +1,18 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.2%;
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
