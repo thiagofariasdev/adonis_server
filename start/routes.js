@@ -25,4 +25,7 @@ Route.group(function () {
     Route.on('/profile/:id?', 'UserController.profile');
     Route.get('/search', 'DataController.find');
 }).middleware(['auth'])
-
+Route.group(function () {
+    Route.post('login', 'UserController.login');
+    Route.post('register', 'UserController.store');
+}).prefix('api')
