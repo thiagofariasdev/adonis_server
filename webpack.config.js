@@ -1,4 +1,5 @@
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
 const extractSass = new ExtractTextPlugin({
     filename: '../public/css/app.css'

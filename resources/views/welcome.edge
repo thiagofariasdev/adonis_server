@@ -1,6 +1,21 @@
 @layout('layouts.app')
 @section('content')
-    <div>
-        <h3>Welcome</h3>
-    </div>
+    <section class="jumbotron jumbotron-fluid bg-light h-a-100 w-a-100">
+        <nav class="navbar navbar-expand-sm fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">HeyU Web</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </section>
 @endsection
