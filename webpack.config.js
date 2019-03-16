@@ -1,7 +1,7 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 const extractSass = new ExtractTextPlugin({
-    filename: 'public/css/app.css'
+    filename: '../public/css/app.css'
 })
 
 function sassRules() {
@@ -30,12 +30,16 @@ function scriptRules() {
 
 module.exports = {
     entry: [
-        './resources/assets/js/app.js'
+        './resources/assets/js/app.js',
+        './resources/assets/sass/app.scss'
     ],
     output: {
         filename: '../public/js/app.js'
     },
     module: {
-        rules: scriptRules()
-    }
+        rules: scriptRules().concat(sassRules())
+    },
+    plugins: [
+        extractSass
+    ]
 }
