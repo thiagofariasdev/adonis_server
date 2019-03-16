@@ -19,6 +19,7 @@ const Route = use('Route')
 Route.on('/').render('welcome');
 Route.on('/login').render('login');
 Route.on('/register').render('register');
+Route.on('/app').render('app');
 Route.group(function () {
     Route.get('/chats', async () => { return render('app') });
     Route.on('/contacts', async () => { return render('app') });
