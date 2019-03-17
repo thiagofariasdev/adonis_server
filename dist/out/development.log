@@ -693,3 +693,631 @@
 [1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
 [1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
 [1]         + 1 hidden module
+[1] Hash: a32c1f8574d5b7fa4a9b
+[1] Version: webpack 4.29.6
+[1] Time: 653ms
+[1] Built at: 2019-03-16 23:07:17
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  194 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: c7149fd033f1f7a57637
+[1] Version: webpack 4.29.6
+[1] Time: 89ms
+[1] Built at: 2019-03-16 23:07:44
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.1 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1] $theme-colors.each
+[1] ^
+[1]       Expected ':' after $theme-colors in assignment statement
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_basics.scss (line 50, column 1)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1] $theme-colors.each
+[1] ^
+[1]       Expected ':' after $theme-colors in assignment statement
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_basics.scss (line 50, column 1)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 286 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]     $theme-colors.each
+[1]     ^
+[1]           Expected ':' after $theme-colors in assignment statement
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_basics.scss (line 50, column 1)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 286 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]     $theme-colors.each
+[1]     ^
+[1]           Expected ':' after $theme-colors in assignment statement
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_basics.scss (line 50, column 1)
+[1] Hash: a32c1f8574d5b7fa4a9b
+[1] Version: webpack 4.29.6
+[1] Time: 617ms
+[1] Built at: 2019-03-16 23:10:35
+[1]                 Asset      Size  Chunks             Chunk Names
+[1] ../public/css/app.css   194 KiB    main  [emitted]  main
+[1]   ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: 60514db82b584b054f8e
+[1] Version: webpack 4.29.6
+[1] Time: 544ms
+[1] Built at: 2019-03-16 23:11:01
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  194 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 1d3a53a62ca1dabd70cc
+[1] Version: webpack 4.29.6
+[1] Time: 606ms
+[1] Built at: 2019-03-16 23:11:16
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: e7618452a0bb22b9f6af
+[1] Version: webpack 4.29.6
+[1] Time: 488ms
+[1] Built at: 2019-03-16 23:11:18
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 0233ec004578303445f4
+[1] Version: webpack 4.29.6
+[1] Time: 559ms
+[1] Built at: 2019-03-16 23:12:23
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: 4f7b962b29c14d51652f
+[1] Version: webpack 4.29.6
+[1] Time: 535ms
+[1] Built at: 2019-03-16 23:12:37
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 9f7340b42f3090654755
+[1] Version: webpack 4.29.6
+[1] Time: 525ms
+[1] Built at: 2019-03-16 23:12:56
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: a4f78cfe45470951db5d
+[1] Version: webpack 4.29.6
+[1] Time: 504ms
+[1] Built at: 2019-03-16 23:13:16
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 677a97e2e5bae63a84aa
+[1] Version: webpack 4.29.6
+[1] Time: 546ms
+[1] Built at: 2019-03-16 23:13:41
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: 0aa525a57e6a464a3ffd
+[1] Version: webpack 4.29.6
+[1] Time: 553ms
+[1] Built at: 2019-03-16 23:14:12
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 31724a519299839bd551
+[1] Version: webpack 4.29.6
+[1] Time: 109ms
+[1] Built at: 2019-03-16 23:16:07
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.11 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1] .h-100{
+[1] ^
+[1]       Invalid CSS after ")": expected expression (e.g. 1px, bold), was ".h-100{"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 8, column 1)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1] .h-100{
+[1] ^
+[1]       Invalid CSS after ")": expected expression (e.g. 1px, bold), was ".h-100{"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 8, column 1)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 300 bytes {1} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]     .h-100{
+[1]     ^
+[1]           Invalid CSS after ")": expected expression (e.g. 1px, bold), was ".h-100{"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 8, column 1)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 300 bytes {1} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]     .h-100{
+[1]     ^
+[1]           Invalid CSS after ")": expected expression (e.g. 1px, bold), was ".h-100{"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 8, column 1)
+[1] Hash: 0aa525a57e6a464a3ffd
+[1] Version: webpack 4.29.6
+[1] Time: 638ms
+[1] Built at: 2019-03-16 23:16:29
+[1]                 Asset      Size  Chunks             Chunk Names
+[1] ../public/css/app.css   195 KiB    main  [emitted]  main
+[1]   ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: 4456d1d5aa3262fc3f23
+[1] Version: webpack 4.29.6
+[1] Time: 441ms
+[1] Built at: 2019-03-16 23:16:31
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: cb5534984ba16124ed9b
+[1] Version: webpack 4.29.6
+[1] Time: 95ms
+[1] Built at: 2019-03-16 23:17:12
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.16 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Hash: b38335344b752a834fd5
+[1] Version: webpack 4.29.6
+[1] Time: 580ms
+[1] Built at: 2019-03-16 23:17:49
+[1]                 Asset      Size  Chunks             Chunk Names
+[1] ../public/css/app.css   195 KiB    main  [emitted]  main
+[1]   ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: f2ea0a3d74110b5b52a2
+[1] Version: webpack 4.29.6
+[1] Time: 494ms
+[1] Built at: 2019-03-16 23:17:54
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module
+[1] Hash: ace5eaecd8f79de46971
+[1] Version: webpack 4.29.6
+[1] Time: 553ms
+[1] Built at: 2019-03-16 23:18:10
+[1]                 Asset     Size  Chunks             Chunk Names
+[1] ../public/css/app.css  195 KiB    main  [emitted]  main
+[1]  + 1 hidden asset
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {1} [built]
+[1]         + 1 hidden module
+[1] Hash: 2691cab153d5215b7f6c
+[1] Version: webpack 4.29.6
+[1] Time: 80ms
+[1] Built at: 2019-03-16 23:18:16
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.16 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {1} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Hash: 91d7c9b6b374e659dbd2
+[1] Version: webpack 4.29.6
+[1] Time: 49ms
+[1] Built at: 2019-03-16 23:18:18
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.16 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%
+[1]                        ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was "}"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 25)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%
+[1]                        ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was "}"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 25)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {1} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%
+[1]                            ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was "}"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 25)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%
+[1]                            ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was "}"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 25)
+[1] Hash: 2691cab153d5215b7f6c
+[1] Version: webpack 4.29.6
+[1] Time: 101ms
+[1] Built at: 2019-03-16 23:18:21
+[1]               Asset      Size  Chunks             Chunk Names
+[1] ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js
+[1] [./resources/assets/sass/app.scss] 1.16 KiB [built] [failed] [1 error]
+[1]     + 62 hidden modules
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss main[1]
+[1] 
+[1] ERROR in ./resources/assets/sass/app.scss
+[1] Module build failed (from ./node_modules/css-loader/dist/cjs.js):
+[1] ModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1] 
+[1]         height: #{$dim}%;
+[1]                       ^
+[1]       Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]       in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1]     at runLoaders (C:\Users\PC\TEMPLATE\mychat\node_modules\webpack\lib\NormalModule.js:301:20)
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:367:11
+[1]     at C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:233:18
+[1]     at context.callback (C:\Users\PC\TEMPLATE\mychat\node_modules\loader-runner\lib\LoaderRunner.js:111:13)
+[1]     at Object.render [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\sass-loader\lib\loader.js:52:13)
+[1]     at Object.done [as callback] (C:\Users\PC\TEMPLATE\mychat\node_modules\neo-async\async.js:8077:18)
+[1]     at options.error (C:\Users\PC\TEMPLATE\mychat\node_modules\node-sass\lib\index.js:294:32)
+[1]  @ ./resources/assets/sass/app.scss
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {0} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 353 bytes {1} [built] [failed] [1 error]
+[1]     
+[1]     ERROR in ./resources/assets/sass/app.scss (./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss)
+[1]     Module build failed (from ./node_modules/sass-loader/lib/loader.js):
+[1]     
+[1]             height: #{$dim}%;
+[1]                           ^
+[1]           Invalid CSS after "...eight: #{$dim}%": expected expression (e.g. 1px, bold), was ";"
+[1]           in C:\Users\PC\TEMPLATE\mychat\resources\assets\sass\_dimensions.scss (line 10, column 24)
+[1] Hash: 97f3a0c1ea12cc171947
+[1] Version: webpack 4.29.6
+[1] Time: 615ms
+[1] Built at: 2019-03-16 23:20:14
+[1]                 Asset      Size  Chunks             Chunk Names
+[1] ../public/css/app.css   195 KiB    main  [emitted]  main
+[1]   ../public/js/app.js  1.12 MiB    main  [emitted]  main
+[1] Entrypoint main = ../public/js/app.js ../public/css/app.css
+[1] [./resources/assets/sass/app.scss] 41 bytes {main} [built]
+[1]     + 62 hidden modules
+[1] Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/dist/cjs.js!node_modules/sass-loader/lib/loader.js!resources/assets/sass/app.scss:
+[1]     Entrypoint undefined = extract-text-webpack-plugin-output-filename
+[1]     [./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./resources/assets/sass/app.scss] 203 KiB {0} [built]
+[1]         + 1 hidden module

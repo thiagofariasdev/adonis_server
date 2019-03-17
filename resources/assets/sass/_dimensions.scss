@@ -1,12 +1,21 @@
-.h-100{
-    height: 100%;
-}
-.h-a-100{
-    height: 100vh;
-}
-.w-100{
-    width: 100%;
-}
-.w-a-100{
-    width: 100vw;
+$dimensions:(
+    100,
+    75,
+    50,
+    25
+);
+
+@each $dim in $dimensions{
+    .h-#{$dim}{
+        height: #{$dim + '%'};
+    }
+    .h-a-#{$dim}{
+        height: #{$dim}vh;
+    }
+    .w-#{$dim}{
+        width: #{$dim + '%'};
+    }
+    .w-a-#{$dim}{
+        width: #{$dim}vw;
+    }
 }

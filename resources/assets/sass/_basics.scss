@@ -47,3 +47,8 @@ html{
     height: 100vh;
     width: 100vw;
 }
+@each $color in map-keys($map: $theme-colors){
+    .fg-#{$color}{
+        color: map-get($theme-colors, $color);
+    }
+}
