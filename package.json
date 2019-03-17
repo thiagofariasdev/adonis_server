@@ -3,11 +3,12 @@
   "version": "4.1.0",
   "adonis-version": "4.1.0",
   "description": "The fullstack application boilerplate for Adonisjs",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "ad-start": "adonis serve --dev",
     "test": "node ace test",
-    "dev": "./node_modules/.bin/webpack --mode development --watch"
+    "webpack-dev": "./node_modules/.bin/webpack --mode development --watch",
+    "start": "concurrently --kill-others-on-fail \"npm run ad-start\" \"npm run webpack-dev\" > ./dist/out/development.log"
   },
   "keywords": [
     "adonisjs",
@@ -48,6 +49,7 @@
     "babel-loader": "^8.0.0-beta.6",
     "babel-preset-es2015": "^7.0.0-beta.3",
     "babel-preset-react": "^7.0.0-beta.3",
+    "concurrently": "^4.1.0",
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "node-sass": "^4.11.0",

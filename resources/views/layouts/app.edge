@@ -13,9 +13,42 @@
         {{ style('css/app') }}
     </head>
     <body>
-        @!section('content')
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <section class="jumbotron jumbotron-fluid bg-light h-a-100 w-a-100">
+            <nav class="navbar navbar-expand-sm fixed-top">
+               
+                <div class='navbar-brand'>
+                    <h3>HeyU</h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span>MENU</span>
+                </button>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li id="home" class="nav-item">
+                            <a href="/"  class="nav-link">About Us</a>
+                        </li>
+                        <li id="login" class="nav-item ">
+                            <a href="/login"  class="nav-link">HeyU Web</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            @!section('content')
+        </section>
+        {{ script('js/jquery-3.3.1.slim.min.js') }}
+        {{ script('js/1.14.7-popper.min.js') }}
+        {{ script('js/4.3.1-bootstrap.min.js') }}
+        <script>
+            let { pathname } = window.location;
+            switch(pathname){
+                case '/':
+                    $('#home').addClass('active');
+                break;
+                case '/login': 
+                    $('#login').addClass('active');
+                break;
+            }
+        </script>
+        @!section('script')
     </body>
 </html>
