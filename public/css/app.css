@@ -1,4 +1,4 @@
-section.jumbotron {
+@import url(https://fonts.googleapis.com/css?family=Righteous);section.jumbotron {
   margin-bottom: 0;
   padding-left: 17px;
   padding-right: 17px; }
@@ -31,6 +31,14 @@ nav.navbar.navbar-expand-sm.fixed-top {
 html {
   height: 100vh;
   width: 100vw; }
+
+div.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.p-title {
+  font-family: "Righteous", cursive; }
 
 .fg-primary {
   color: #a01e24; }

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+$Righteous: 'Righteous', cursive;;
+
 section.jumbotron{
     h1{
         color: nth($fc, 1);
@@ -46,6 +50,14 @@ nav.navbar.navbar-expand-sm.fixed-top{
 html{
     height: 100vh;
     width: 100vw;
+}
+div.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p-title{
+    font-family: $Righteous;
 }
 @each $color in map-keys($map: $theme-colors){
     .fg-#{$color}{
