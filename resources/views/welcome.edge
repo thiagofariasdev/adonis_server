@@ -9,12 +9,12 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum velit ut sagittis facilisis. Phasellus finibus tellus in diam rutrum, id ullamcorper sapien elementum. Maecenas et sollicitudin leo. Fusce scelerisque aliquam congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae 
                     </p>
                     <div>
-                        <button class="btn btn-outline-dark">
+                        <a href="/login" class="btn btn-outline-dark">
                             Sign-in
-                        </button>
-                        <button class="btn btn-link">
+                        </a>
+                        <a href="/register" class="btn btn-link">
                             or Sign-up
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -24,4 +24,13 @@
         </div>
     </div>
     
+@endsection
+@section('script')
+    <script>
+        const es = new EventSource('/api/messages');
+        es.onmessage = (msg) =>{
+            if(msg)
+                console.log(msg);
+        }
+    </script>
 @endsection
