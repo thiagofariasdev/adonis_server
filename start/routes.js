@@ -14,7 +14,7 @@
 */
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
-const Route = use('Route')
+const Route = use('Route');
 const c_msg = [];
 
 Route.on('/').render('welcome');
@@ -38,7 +38,7 @@ Route.group(function () {
         c_msg.push('Hello\n\n');
         response.send('OK: ' + c_msg);
     })
-    Route.get('/messages', ({ response }) => {
+    Route.get('/messages', async ({ response }) => {
         response.header('Content-type', 'text/event-stream');
         response.send(c_msg);
     })
