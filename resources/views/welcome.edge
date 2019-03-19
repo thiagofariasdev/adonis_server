@@ -2,7 +2,7 @@
 @section('content')
     <div class="container pt-2 h-100">
         <div class="row h-100">
-            <div class="col-lg-4">
+            <div class="col-md-5 col-lg-4">
                 <div class="flex-center h-100">
                     <h2 class="p-title">Social media chat api</h2>
                     <p>
@@ -18,19 +18,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-md-7 col-lg-8">
 
             </div>
         </div>
     </div>
-    
 @endsection
 @section('script')
     <script>
-        const es = new EventSource('/api/messages');
-        es.onmessage = (msg) =>{
-            if(msg)
-                console.log(msg);
+        function fn(res){
+            console.log(res);
         }
+        const es = new EventSource('/api/messages');
+        es.onerror = fn;
+        es.onmessage = fn;
     </script>
 @endsection

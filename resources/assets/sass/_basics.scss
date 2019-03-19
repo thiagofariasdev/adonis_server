@@ -46,10 +46,17 @@ nav.navbar.navbar-expand-sm.fixed-top{
             }
         }
     }
+    div#navbar{
+        background-image: linear-gradient();
+    }
 }
 html{
     height: 100vh;
     width: 100vw;
+    background: linear-gradient(top right, #8e9eab, #eef2f3);
+}
+body{
+    background: linear-gradient( #ECE9E6, #FFFFFF) !important;
 }
 div.flex-center{
     display: flex;
