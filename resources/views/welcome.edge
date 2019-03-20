@@ -25,12 +25,5 @@
     </div>
 @endsection
 @section('script')
-    <script>
-        function fn(res){
-            console.log(res);
-        }
-        const es = new EventSource('/api/messages');
-        es.onerror = fn;
-        es.onmessage = fn;
-    </script>
+
 @endsection

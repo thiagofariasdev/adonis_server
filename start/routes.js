@@ -1,5 +1,7 @@
 'use strict'
 
+const fs = require('fs');
+
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -15,7 +17,6 @@
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route');
-const c_msg = [];
 
 Route.on('/').render('welcome');
 Route.on('/login').render('login');
@@ -34,17 +35,18 @@ Route.group(function () {
 Route.group(function () {
     Route.post('login', 'UserController.login');
     Route.post('register', 'UserController.store');
-    Route.get('/send-message', ({ response }) => {
-        c_msg.push('Hello\n\n');
-        response.send('OK: ' + c_msg);
-    })
-    Route.get('/messages', async ({ response }) => {
-        response.header('Content-type', 'text/event-stream');
-        response.send(c_msg);
-    })
 }).prefix('api');
 
 //Auth API
 Route.group(function () {
 
 }).prefix('api').middleware('auth');
+
+// IMAGE Route
+
+Route.get('/img/:name', async ({ response }) => {
+    let str = fs.createReadStream('/public/image/pyramid.png');
+    str.on('open', () => {
+        str.pipe(response.response)
+    });
+});
