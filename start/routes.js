@@ -1,7 +1,5 @@
 'use strict'
 
-const fs = require('fs');
-
 /*
 |--------------------------------------------------------------------------
 | Routes
@@ -44,9 +42,5 @@ Route.group(function () {
 
 // IMAGE Route
 
-Route.get('/img/:name', async ({ response }) => {
-    let str = fs.createReadStream('/public/image/pyramid.png');
-    str.on('open', () => {
-        str.pipe(response.response)
-    });
-});
+Route.get('/img/:name', 'FileController.chatPhoto');
+Route.get('/simg/:name', 'FileController.syncPhoto');
