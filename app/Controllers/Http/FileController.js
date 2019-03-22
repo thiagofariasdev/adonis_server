@@ -1,18 +1,21 @@
 'use strict'
 const Drive = use('Drive');
 
-const file = './../logs/cmd_out.log';
+const file = './../public/image/bacon.jpg';
 
 class FileController {
     async chatPhoto({ response }) {
         response.implicitEnd = false;
         const stream = await Drive.getStream(file);
         stream.on('data', (cnk) => {
-            response.send(cnk);
+            response.response.write(cnk);
         });
+        stream.on('end', (cnk) => {
+            response.send(cnk);
+        })
     }
     async syncPhoto({ response }) {
-        return await Drive.get(file);
+        response.response.write(await Drive.get(file));
     }
 }
 
