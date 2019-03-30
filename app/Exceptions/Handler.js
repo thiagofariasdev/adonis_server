@@ -20,11 +20,26 @@ class ExceptionHandler extends BaseExceptionHandler {
 	 *
 	 * @return {void}
 	 */
-	async handle(error, { request, response }) {
+	async handle(error, { request, response, view }) {
+		let url = request.originalUrl();
 		if (error.code == 'EBADCSRFTOKEN') {
 			response.forbidden('server cant handle your request')
 		}
-		response.status(error.status).send(error.message)
+		if (url.search(/\/api\//g) == -1) {
+			let messages = {
+				404: 'Not found'
+			}
+			return response
+				.status(error.status)
+				.send(
+					view.render('error.' + error.status, {
+						code: error.status,
+						message: messages[error.status] || 'Ooops!'
+					})
+				);
+		} else {
+			return response.status(error.status).json({ error: true, status: error.status, msg: error.message });
+		}
 	}
 
 	/**

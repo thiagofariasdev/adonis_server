@@ -42,5 +42,4 @@ Route.group(function () {
 
 // IMAGE Route
 
-Route.get('/img/:name', 'FileController.chatPhoto');
-Route.get('/simg/:name', 'FileController.syncPhoto');
+Route.get('/image/:name', 'FileController.chatPhoto');
