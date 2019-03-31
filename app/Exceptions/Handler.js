@@ -27,7 +27,10 @@ class ExceptionHandler extends BaseExceptionHandler {
 		}
 		if (url.search(/\/api\//g) == -1) {
 			let messages = {
-				404: 'Not found'
+				404: 'Not found',
+				401: 'Unauthorized',
+				400: 'Invalid',
+				402: 'Payment necessary'
 			}
 			return response
 				.status(error.status)

@@ -52,9 +52,9 @@ nav.navbar.navbar-expand-sm.fixed-top{
             }
         }
     }
-    div#navbar{
-        background-image: linear-gradient();
-    }
+}
+nav:has(div#navbar.show){
+    background: #fff !important;
 }
 html{
     min-height: 100vh;
@@ -81,4 +81,17 @@ div.flex-center{
     .fg-#{$color}{
         color: map-get($theme-colors, $color);
     }
+}
+@keyframes slideUp {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.2%;
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
 }
