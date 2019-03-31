@@ -820,7 +820,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./resources/assets/sass/app.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/css-loader/dist/cjs.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/lib/loader.js):\\n\\r\\nundefined\\r\\n          ^\\r\\n      No mixin named img-fluid\\r\\n      in C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\bootstrap\\\\scss\\\\_images.scss (line 9, column 12)\\n    at runLoaders (C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:301:20)\\n    at C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:367:11\\n    at C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:233:18\\n    at context.callback (C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:111:13)\\n    at Object.render [as callback] (C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\sass-loader\\\\lib\\\\loader.js:52:13)\\n    at Object.done [as callback] (C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\neo-async\\\\async.js:8077:18)\\n    at options.error (C:\\\\Users\\\\PC\\\\TEMPLATE\\\\mychat\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:294:32)\");\n\n//# sourceURL=webpack:///./resources/assets/sass/app.scss?");
 
 /***/ }),
 
