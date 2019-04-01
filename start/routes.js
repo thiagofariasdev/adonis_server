@@ -17,8 +17,8 @@
 const Route = use('Route');
 
 Route.on('/').render('welcome');
-Route.on('/login').render('login');
-Route.on('/register').render('register');
+Route.on('/login').render('login', { title: 'Login' });
+Route.on('/register').render('register', { title: 'Register' });
 Route.on('/app').render('app');
 
 // Auth WEB

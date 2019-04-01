@@ -59,10 +59,6 @@ nav:has(div#navbar.show){
 html{
     min-height: 100vh;
     min-width: 100vw;
-    background: linear-gradient(top right, #8e9eab, #eef2f3);
-}
-body{
-    background: linear-gradient( #ECE9E6, #FFFFFF) !important;
 }
 div.flex-center{
     @extend %flex;
