@@ -91,3 +91,6 @@ div.flex-center{
 		transform: none;
 	}
 }
+.bg-gradient{
+    @include gradient(top right, nth($mycolors, 1), nth($mycolors, 2))
+}

@@ -1,15 +1,13 @@
-
-// functions
-@import "functions";
-
 //theme colors
-@import "colors";
-
-//theme elements
-@import "basics";
-
+@import "./var/colors";
 //dimensions
-@import "dimensions";
+@import "./var/dimensions";
+// functions
+@import "./var/functions";
+
+//theme by screens
+@import "./theme/default";
+@import "./theme/auth";
 
 //bootstrap
-@import 'bootstrap';
+@import './vendor/bootstrap';
