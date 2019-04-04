@@ -2,8 +2,9 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 const extractSass = new ExtractTextPlugin({
-    filename: '../public/css/app.css'
-})
+    filename: '../public/css/[name].css'
+});
+
 
 function sassRules() {
     return [
@@ -22,7 +23,7 @@ function scriptRules() {
     return [
         {
             test: /\.js$/,
-            exclude: [/node_modules/],
+            exclude: [/node_modules/, /\.(sass|scss)/g],
             loader: 'babel-loader',
             options: { presets: ['react', 'es2015'] }
         }
@@ -30,12 +31,17 @@ function scriptRules() {
 }
 
 module.exports = {
-    entry: [
-        './resources/assets/js/app.js',
-        './resources/assets/sass/app.scss'
-    ],
+    entry: {
+        app: './resources/assets/js/app.js',
+        app: './resources/assets/sass/app.scss',
+        auth: './resources/assets/sass/auth.scss',
+        bootstrap: './resources/assets/sass/bootstrap.scss',
+        default: './resources/assets/sass/default.scss',
+        popper: './node_modules/popper.js/dist/popper.js',
+        jquery: './node_modules/jquery/dist/jquery.js'
+    },
     output: {
-        filename: '../public/js/app.js'
+        filename: '../public/js/[name].js'
     },
     module: {
         rules: scriptRules().concat(sassRules())

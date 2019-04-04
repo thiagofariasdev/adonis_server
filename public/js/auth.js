@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./resources/assets/sass/app.scss");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./resources/assets/sass/auth.scss");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/assets/sass/app.scss":
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
+/***/ "./resources/assets/sass/auth.scss":
+/*!*****************************************!*\
+  !*** ./resources/assets/sass/auth.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./resources/assets/sass/app.scss?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./resources/assets/sass/auth.scss?");
 
 /***/ })
 
