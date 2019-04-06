@@ -17,9 +17,11 @@
 const Route = use('Route');
 
 Route.on('/').render('welcome');
-Route.on('/login').render('login', { title: 'Login' });
-Route.on('/register').render('register', { title: 'Register' });
+Route.on('/login').render('auth.login', { t: 'Login' });
+Route.on('/register').render('auth.register', { t: 'Register' });
 Route.on('/app').render('app');
+
+Route.post('/login', 'UserController.login');
 
 // Auth WEB
 Route.group(function () {

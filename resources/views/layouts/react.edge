@@ -10,18 +10,14 @@
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
             crossorigin="anonymous"
         >
-        <title> HeyU | 
-            @section('title') 
-                chat api for your app 
-            @endsection 
-        </title>
-        {{ style('css/app') }}
+        <title>{{title()}}</title>
+        {{style('css/fa')}}
     </head>
     <body>
         @!section('content')
         {{script('js/app')}}
-        {{ script('js/jquery-3.3.1.slim.min.js') }}
-        {{ script('js/1.14.7-popper.min.js') }}
-        {{ script('js/4.3.1-bootstrap.min.js') }}
+        {{ script('js/jquery.js') }}
+        {{ script('js/popper.js') }}
+        {{ script('js/bootstrap.js') }}
     </body>
 </html>

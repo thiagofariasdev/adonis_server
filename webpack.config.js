@@ -32,8 +32,9 @@ function scriptRules() {
 
 module.exports = {
     entry: {
-        app: './resources/assets/js/app.js',
         app: './resources/assets/sass/app.scss',
+        app: './resources/assets/js/app.js',
+        loader: './resources/assets/js/loader.js',
         auth: './resources/assets/sass/auth.scss',
         bootstrap: './resources/assets/sass/bootstrap.scss',
         default: './resources/assets/sass/default.scss',

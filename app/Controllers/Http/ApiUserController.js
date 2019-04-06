@@ -2,13 +2,13 @@
 
 const User = use('App/Models/User');
 
-class UserController {
-    async login({ request, auth, view }) {
+class ApiUserController {
+    async login({ request, auth }) {
         const { email, password } = request.all();
         let usr = await auth.attempt(email, password);
-        return view.render('app', { user: usr });
+        return usr;
     }
-    async store({ request, view }) {
+    async store({ request }) {
         const u = request.only([
             'email',
             'username',
@@ -20,4 +20,4 @@ class UserController {
     }
 }
 
-module.exports = UserController
+module.exports = ApiUserController

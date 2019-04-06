@@ -1,0 +1,44 @@
+@keyframes slideUp {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.2%;
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+.bg-gradient{
+    @include gradient(top, nth($mycolors, 1), nth($mycolors, 2))
+}
+.gradient-font{
+	@include gradient(left, nth($mycolors, 1), nth($mycolors, 2));
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.gradient-button{
+	@include gradient(top right, nth($mycolors, 1), nth($mycolors, 2));
+	padding:2px;
+	position: relative;
+	border: none !important;
+	div{
+		background-color: #fff !important;
+		border-radius: inherit;
+		span{
+			@include gradient(left, nth($mycolors, 1), nth($mycolors, 2));
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			font-weight: 700
+		}
+	}
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

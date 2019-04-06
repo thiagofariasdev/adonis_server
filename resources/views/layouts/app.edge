@@ -4,18 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> PetHERO | 
-            @section('title') 
-                Your second bestfriend
-            @endsection 
-        </title>
+        <title>{{title()}}</title>
         <link 
             rel="stylesheet" 
             href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
             crossorigin="anonymous"
         >
-        {{ style('css/app') }}
+        {{style('css/bootstrap.css')}}
+        {{style('css/default')}}
+        {{style('css/fa')}}
     </head>
     <body>
         <section class="jumbotron jumbotron-fluid bg-transparent h-a-100 w-a-100">
@@ -36,9 +34,9 @@
             </nav>
             @!section('content')
         </section>
-        {{ script('js/jquery-3.3.1.slim.min.js') }}
-        {{ script('js/1.14.7-popper.min.js') }}
-        {{ script('js/4.3.1-bootstrap.min.js') }}
+        {{ script('js/jquery.js') }}
+        {{ script('js/popper.js') }}
+        {{ script('js/bootstrap.js') }}
         <script>
             let { pathname } = window.location;
             switch(pathname){

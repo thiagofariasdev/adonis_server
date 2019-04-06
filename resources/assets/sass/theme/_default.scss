@@ -78,19 +78,3 @@ div.flex-center{
         color: map-get($theme-colors, $color);
     }
 }
-@keyframes slideUp {
-	0% {
-		transform: translateY(40px);
-		opacity: 0;
-	}
-	50% {
-		opacity: 0.2%;
-	}
-	100% {
-		opacity: 1;
-		transform: none;
-	}
-}
-.bg-gradient{
-    @include gradient(top right, nth($mycolors, 1), nth($mycolors, 2))
-}

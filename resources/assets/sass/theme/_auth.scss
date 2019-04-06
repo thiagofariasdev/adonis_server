@@ -1,5 +1,35 @@
-input{
+form{
+    width: 100%;
+}
+input.my-input{
     border: none;
     border-bottom: 1px solid #000;
     border-radius: 0;
+    margin: 17px;
+    width: calc(100% - (17px + 17px));
+    background-color: transparent;
+}
+input.my-input:focus{
+    outline: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    box-shadow: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+div.form-group{
+    position: relative;
+    input{
+        padding: 10px;
+        padding-right: calc(10px + 25px)
+    }
+    label{
+        position: absolute;
+        top: calc(1em + 3px);
+        right: calc(1em + 10px);
+        bottom: 0;
+        font-size: 20px;
+    }
 }
