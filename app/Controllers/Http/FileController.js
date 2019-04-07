@@ -8,15 +8,15 @@ class FileController {
         response.implicitEnd = false;
         let _file_ = Helpers.publicPath('image/' + params.name);
         if (!fs.existsSync(_file_)) {
-            return response.status(404).json({ msg: '404 | file name does not match', error: true });
+            return response.status(404).json({ msg: '404 | Not Found', error: true });
         }
         const stream = await Drive.getStream(_file_);
-        stream.on('data', (cnk) => {
-            response.response.write(cnk);
-        });
         stream.on('end', (cnk) => {
             response.send(cnk);
-        })
+        });
+        stream.pipe(response.response);
+    }
+    async streamAudio({ response, params }) {
     }
     async uploadPhoto({ response, request }) {
 

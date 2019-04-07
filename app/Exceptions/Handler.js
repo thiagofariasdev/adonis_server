@@ -21,27 +21,33 @@ class ExceptionHandler extends BaseExceptionHandler {
 	 * @return {void}
 	 */
 	async handle(error, { request, response, view }) {
+		const { code, status, message } = error;
 		let url = request.originalUrl();
 		if (error.code == 'EBADCSRFTOKEN') {
-			response.forbidden('server cant handle your request')
+			return response.forbidden('server cant handle your request');
 		}
 		if (url.search(/\/api\//g) == -1) {
 			let messages = {
 				404: 'Not found',
 				401: 'Unauthorized',
 				400: 'Invalid',
-				402: 'Payment necessary'
+				402: 'Payment necessary',
+				500: 'Internal server error'
 			}
-			return response
-				.status(error.status)
-				.send(
-					view.render('error.' + error.status, {
-						code: error.status,
-						message: messages[error.status] || 'Ooops!'
-					})
-				);
+			if (status == 401) {
+				return response
+					.status(status)
+					.redirect(`/login?curl=${request.originalUrl()}`)
+			} else {
+				let data = { code: status, message: messages[status], msg: message };
+				return response
+					.status(status)
+					.send(view.render(`error.${status}`, data))
+			}
 		} else {
-			return response.status(error.status).json({ error: true, status: error.status, msg: error.message });
+			return response
+				.status(status)
+				.json({ error: true, status: status, msg: message });
 		}
 	}
 

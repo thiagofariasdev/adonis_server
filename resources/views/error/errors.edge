@@ -11,13 +11,14 @@
             crossorigin="anonymous"
         >
         <title>{{code}} | {{message}}</title>
-        {{ style('css/style') }}
         {{ style('css/app') }}
     </head>
     <body>
         @!section('content')
-        {{ script('js/jquery-3.3.1.slim.min.js') }}
-        {{ script('js/1.14.7-popper.min.js') }}
-        {{ script('js/4.3.1-bootstrap.min.js') }}
+        {{ script('js/loader.js') }}
+        <script>
+            let msg = "{{msg}}";
+            console.log( msg )
+        </script>
     </body>
 </html>

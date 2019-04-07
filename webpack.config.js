@@ -38,8 +38,6 @@ module.exports = {
         auth: './resources/assets/sass/auth.scss',
         bootstrap: './resources/assets/sass/bootstrap.scss',
         default: './resources/assets/sass/default.scss',
-        popper: './node_modules/popper.js/dist/popper.js',
-        jquery: './node_modules/jquery/dist/jquery.js'
     },
     output: {
         filename: '../public/js/[name].js'

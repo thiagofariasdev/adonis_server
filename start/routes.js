@@ -19,16 +19,16 @@ const Route = use('Route');
 Route.on('/').render('welcome');
 Route.on('/login').render('auth.login', { t: 'Login' });
 Route.on('/register').render('auth.register', { t: 'Register' });
-Route.on('/app').render('app');
+Route.on('/app').render('dashs.client');
 
 Route.post('/login', 'UserController.login');
 
 // Auth WEB
 Route.group(function () {
-    Route.get('/chats', async () => { return render('app') });
-    Route.on('/contacts', async () => { return render('app') });
+    Route.get('/chats', async () => { return render('dashs.client') });
+    Route.on('/contacts', async () => { return render('dashs.client') });
     Route.on('/profile/:id?', 'UserController.profile');
-    Route.get('/search', 'DataController.find');
+    Route.get('/search', 'UserController.find');
 }).middleware(['auth'])
 
 //API
