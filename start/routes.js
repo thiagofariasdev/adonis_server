@@ -44,4 +44,4 @@ Route.group(function () {
 
 // IMAGE Route
 
-Route.get('/image/:name', 'FileController.chatPhoto');
+Route.get('/img/:name', 'FileController.chatPhoto');
