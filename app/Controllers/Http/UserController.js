@@ -8,10 +8,11 @@ class UserController {
         const { username, password } = request.all();
         const { curl } = request.get();
         let curUsr = await auth.attempt(username, password);
-        if (curl) {
+        if (curl != undefined) {
             return response.redirect(curl);
         } else {
-            return view.render('dashs.client', { user: usr });
+            await auth.generate(curUsr)
+            return view.render('dashs.client', { user: curUsr });
         }
     }
     async store({ request, view }) {
