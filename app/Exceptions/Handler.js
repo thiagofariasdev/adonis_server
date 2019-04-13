@@ -34,10 +34,14 @@ class ExceptionHandler extends BaseExceptionHandler {
 				402: 'Payment necessary',
 				500: 'Internal server error'
 			}
-			if (status == 401) {
+			if (status == 401 && request.originalUrl().search(/\/login/g) != -1) {
 				return response
 					.status(status)
 					.redirect(`/login?curl=${request.originalUrl()}`)
+			} else if (status == 401) {
+				return response
+					.status(status)
+					.redirect(`/login`);
 			} else {
 				let data = { code: status, message: messages[status], msg: message };
 				return response
