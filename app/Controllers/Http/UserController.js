@@ -11,7 +11,7 @@ class UserController {
         if (curl != undefined) {
             return response.redirect(curl);
         } else {
-            await auth.generate(curUsr);
+            // await auth.generate(curUsr);
             return view.render('dashs.client', { user: curUsr });
         }
     }

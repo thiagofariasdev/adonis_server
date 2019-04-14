@@ -33,15 +33,21 @@ Route.group(function () {
 
 //API
 Route.group(function () {
-    Route.post('login', 'UserController.login');
-    Route.post('register', 'UserController.store');
+    Route.post('login', 'ApiUserController.login');
+    Route.post('register', 'ApiUserController.store');
 }).prefix('api');
 
 //Auth API
 Route.group(function () {
-
-}).prefix('api').middleware('auth');
+    Route.get('test', async ({ auth }) => {
+        try {
+            return await auth.getUser();
+        } catch (error) {
+            return { msg: error };
+        }
+    })
+}).prefix('aapi').middleware('auth');
 
 // IMAGE Route
 
-Route.get('/img/:name', 'FileController.chatPhoto');
+Route.get('/img/:name', 'FileController.sitePhoto');
