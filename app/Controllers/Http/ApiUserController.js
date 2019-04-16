@@ -3,7 +3,7 @@
 const User = use('App/Models/User');
 
 class ApiUserController {
-    async login({ request, auth, response }) {
+    async login({ request, auth }) {
         const { username, password } = request.all();
         let curUsr = await auth.attempt(username, password);
         curUsr.user = await User.findBy('email', username);
