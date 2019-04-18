@@ -6,7 +6,8 @@ class ApiUserController {
     async login({ request, auth }) {
         const { username, password } = request.all();
         let curUsr = await auth.attempt(username, password);
-        curUsr.user = await User.findBy('email', username);
+        let usr = await User.findBy('email', username);
+        curUsr.user = usr;
         return curUsr;
     }
     async store({ request }) {
