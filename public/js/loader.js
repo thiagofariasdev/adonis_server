@@ -195,7 +195,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! jquery/dist/jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\n__webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ \"./node_modules/@fortawesome/fontawesome-free/js/all.js\");\n\n__webpack_require__(/*! popper.js/dist/popper */ \"./node_modules/popper.js/dist/popper.js\");\n\n__webpack_require__(/*! bootstrap/dist/js/bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\n//# sourceURL=webpack:///./resources/assets/js/loader.js?");
+eval("\n\nvar _jquery = _interopRequireDefault(__webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\"));\n\n__webpack_require__(/*! @fortawesome/fontawesome-free/js/all */ \"./node_modules/@fortawesome/fontawesome-free/js/all.js\");\n\n__webpack_require__(/*! popper.js/dist/popper */ \"./node_modules/popper.js/dist/popper.js\");\n\n__webpack_require__(/*! bootstrap/dist/js/bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nwindow.$ = _jquery.default;\n\n//# sourceURL=webpack:///./resources/assets/js/loader.js?");
 
 /***/ })
 

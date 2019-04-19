@@ -15,6 +15,7 @@ section.jumbotron{
     margin-bottom: 0;
     padding-left: 17px;
     padding-right: 17px;
+    background-color: transparent;
 }
 nav.navbar.navbar-expand-sm.fixed-top{
     padding-left: 3em;
@@ -59,6 +60,13 @@ nav:has(div#navbar.show){
 html{
     min-height: 100vh;
     min-width: 100vw;
+    background-image: url('/image/background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-color: transparent;
 }
 div.flex-center{
     @extend %flex;
