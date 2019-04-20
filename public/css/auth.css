@@ -62,6 +62,9 @@
   background-image: -moz-linear-gradient(top, #cc5333, #23074d);
   background-image: -o-linear-gradient(top, #cc5333, #23074d); }
 
+.bg-white {
+  background-color: #fff; }
+
 .gradient-font {
   background-image: linear-gradient(left, #cc5333, #23074d);
   background-image: -webkit-linear-gradient(left, #cc5333, #23074d);

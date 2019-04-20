@@ -14,6 +14,9 @@
 .bg-gradient{
     @include gradient(top, nth($mycolors, 1), nth($mycolors, 2))
 }
+.bg-white{
+	background-color: #fff;
+}
 .gradient-font{
 	@include gradient(left, nth($mycolors, 1), nth($mycolors, 2));
 	background-clip: text;

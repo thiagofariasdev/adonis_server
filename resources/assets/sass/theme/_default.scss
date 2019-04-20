@@ -13,8 +13,7 @@ section.jumbotron{
         color: nth($fc, 1);
     }
     margin-bottom: 0;
-    padding-left: 17px;
-    padding-right: 17px;
+    padding:0;
     background-color: transparent;
 }
 nav.navbar.navbar-expand-sm.fixed-top{
@@ -54,8 +53,10 @@ nav.navbar.navbar-expand-sm.fixed-top{
         }
     }
 }
-nav:has(div#navbar.show){
-    background: #fff !important;
+@media only screen and (max-width: 577px){
+    nav.navbar.navbar-expand-sm.fixed-top{
+        background-color: #fff;
+    }
 }
 html{
     min-height: 100vh;

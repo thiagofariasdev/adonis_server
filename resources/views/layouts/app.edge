@@ -11,9 +11,8 @@
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
             crossorigin="anonymous"
         >
-        {{style('css/bootstrap.css')}}
+        {{style('css/bootstrap')}}
         {{style('css/default')}}
-        {{style('css/fa')}}
     </head>
     <body>
         <section class="jumbotron jumbotron-fluid h-a-100 w-a-100">
@@ -34,7 +33,8 @@
             </nav>
             @!section('content')
         </section>
-        {{ script('js/loader.js') }}
+        {{ script('js/jquery') }}
+        {{ script('js/bootstrap') }}
         <script>
             let { pathname } = window.location;
             switch(pathname){

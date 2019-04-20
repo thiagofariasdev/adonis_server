@@ -2,7 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 const extractSass = new ExtractTextPlugin({
-    filename: '../public/css/[name].css'
+    filename: '../public/[name]'
 });
 
 
@@ -23,24 +23,28 @@ function scriptRules() {
     return [
         {
             test: /\.js$/,
-            exclude: [/node_modules/, /\.(sass|scss)/g],
+            exclude: [/node_modules/, /\.scss/g, /sass/g],
             loader: 'babel-loader',
             options: { presets: ['react', 'es2015'] }
         }
     ]
 }
 
+let paths = (type) => type == 'sass' ? './resources/assets/sass/' : './resources/assets/js/';
+
 module.exports = {
     entry: {
-        app: './resources/assets/sass/app.scss',
-        app: './resources/assets/js/app.js',
-        loader: './resources/assets/js/loader.js',
-        auth: './resources/assets/sass/auth.scss',
-        bootstrap: './resources/assets/sass/bootstrap.scss',
-        default: './resources/assets/sass/default.scss',
+        'js/app.js': paths('js') + 'app.js',
+        'js/bootstrap.js': paths('js') + 'script/bootstrap.js',
+        'js/fontawesome.js': paths('js') + 'script/fa.js',
+        'js/jquery.js': paths('js') + 'script/jquery.js',
+        'css/default.css': paths('sass') + 'default.scss',
+        'css/bootstrap.css': paths('sass') + 'bootstrap.scss',
+        'css/auth.css': paths('sass') + 'auth.scss',
+        'css/app.css': paths('sass') + 'app.scss'
     },
     output: {
-        filename: '../public/js/[name].js'
+        filename: '../public/[name]'
     },
     module: {
         rules: scriptRules().concat(sassRules())

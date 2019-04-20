@@ -45,3 +45,57 @@
 
 .w-a-25 {
   width: 25vw; }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0; }
+  50% {
+    opacity: 0.2%; }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+.bg-gradient {
+  background-image: linear-gradient(top, #cc5333, #23074d);
+  background-image: -webkit-linear-gradient(top, #cc5333, #23074d);
+  background-image: -moz-linear-gradient(top, #cc5333, #23074d);
+  background-image: -o-linear-gradient(top, #cc5333, #23074d); }
+
+.bg-white {
+  background-color: #fff; }
+
+.gradient-font {
+  background-image: linear-gradient(left, #cc5333, #23074d);
+  background-image: -webkit-linear-gradient(left, #cc5333, #23074d);
+  background-image: -moz-linear-gradient(left, #cc5333, #23074d);
+  background-image: -o-linear-gradient(left, #cc5333, #23074d);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
+.gradient-button {
+  background-image: linear-gradient(top right, #cc5333, #23074d);
+  background-image: -webkit-linear-gradient(top right, #cc5333, #23074d);
+  background-image: -moz-linear-gradient(top right, #cc5333, #23074d);
+  background-image: -o-linear-gradient(top right, #cc5333, #23074d);
+  padding: 2px;
+  position: relative;
+  border: none !important; }
+  .gradient-button div {
+    background-color: #fff !important;
+    border-radius: inherit; }
+    .gradient-button div span {
+      background-image: linear-gradient(left, #cc5333, #23074d);
+      background-image: -webkit-linear-gradient(left, #cc5333, #23074d);
+      background-image: -moz-linear-gradient(left, #cc5333, #23074d);
+      background-image: -o-linear-gradient(left, #cc5333, #23074d);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 700; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
